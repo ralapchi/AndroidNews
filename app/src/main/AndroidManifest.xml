@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ralapchi.myproject"
+    >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity_welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+                  android:theme="@style/AppTheme1"
+            android:configChanges="orientation|screenSize"
+           >
+
+            <fragment android:name="android.R.layout.fragment_pindao"/>
+            <fragment android:name="android.R.layout.fragment_tuijian"/>
+            <fragment android:name ="android.R.layout.fragment_wode"/>
+        </activity>
+        <activity android:name=".NewsInfoActivity"
+                  android:theme="@style/AppTheme">
+        </activity>
+        <activity android:name=".Activity_caijing"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity android:name=".Activity_guoji"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity android:name=".Activity_guonei"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity android:name=".Activity_junshi"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity android:name=".Activity_keji"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity android:name=".Activity_shishang"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity android:name=".Activity_tiyu"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity android:name=".Activity_yule"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity android:name=".Activity_shehui"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent1106084677" /> <!-- 开放平台获取的APPID -->
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.connect.common.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            />
+    </application>
+
+</manifest>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+    <FrameLayout
+        android:id="@+id/main_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_radiogroup">
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_radiogroup"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/rb_shouye"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:checked="true"
+                android:layout_weight="1"
+                android:textSize="0sp"
+                android:drawableTop="@drawable/radio_group_selector_shouye" />
+            <RadioButton
+                android:id="@+id/rb_shipin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:layout_weight="1"
+                android:textSize="0sp"
+                android:drawableTop="@drawable/radio_group_selector_shipin"/>
+            <RadioButton
+                android:id="@+id/rb_wode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:layout_weight="1"
+                android:textSize="0sp"
+                android:drawableTop="@drawable/radio_group_selector_wode"/>
+        </RadioGroup>
+
+    </LinearLayout>
+</RelativeLayout>
